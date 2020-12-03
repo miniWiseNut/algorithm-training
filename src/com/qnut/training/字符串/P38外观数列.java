@@ -60,6 +60,7 @@ public class P38外观数列 {
         StringBuffer sb = new StringBuffer();
         int start = 0;
         for (int i = 0; i < num.length() + 1; i++) {
+            // 最后一位直接拼接
             if (i == num.length()) {
                 sb.append(i - start).append(num.charAt(start));
                 // 直到start位的字符串和i位的字符串不同，拼接并更新start位
